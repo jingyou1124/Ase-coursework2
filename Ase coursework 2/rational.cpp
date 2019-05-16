@@ -173,13 +173,13 @@ void Rational::normalise()
         throw(DivideByZeroError());
     }
 
-    if (denom < 0)
+    else if (denom < 0)
     {
         num   = -num;
         denom = -denom;
     }
 
-    if ((num == 0) || (denom == 1))
+    else if ((num == 0) || (denom == 1))
     {
         denom = 1;
     }
